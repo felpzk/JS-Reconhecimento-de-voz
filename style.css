@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+:root {
+    --primary-color: #E8F9FD;
+    --bg-color: #0AA1DD;
+}
+
+body {
+    background-color: var(--bg-color);
+    color: var(--primary-color);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    gap: 20px;
+}
+
+h1 {
+    font-size: 5rem;
+}
+
+h2 {
+    font-size: 7rem;
+}
+
+h3 {
+    font-size: 2.5rem;
+}
+
+#jogar-novamente {
+    width: 10rem;
+    padding: 10px;
+    background-color: rgb(195, 250, 243);
+    border: 2px solid rgb(3, 73, 114);
+    border-radius: 10px;
+    transition: 0.5s;
+}
+
+#jogar-novamente:hover {
+    cursor: pointer;
+    background-color: rgb(168, 245, 235);
+}
+
+
+.mensagem {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 20px;
+    font-size: 1.5rem;
+}
+
+.box {
+    border: 2px solid rgb(0, 0, 0);
+    border-radius: 10px;
+    box-shadow: 10px 10px 10px black;
+    padding: 10px;
+    font-size: 5rem;
+}
+
+@media (min-width: 360px) {
+    h1 {
+        font-size: 2rem;
+        text-align: center;
+    }
+
+    h2 {
+        font-size: 2rem;
+        text-align: center;
+    }
+
+    h3 {
+        font-size: 2rem;
+        text-align: center;
+    }
+}
